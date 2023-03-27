@@ -1,6 +1,6 @@
 # 簡易車資計算機
 
-**初學windowsform練習**
+**Keyword: 初學windowsform練習**
 
 依性別及年齡段區分孩童免票、原價票及敬老優待票
 1. 具基本輸入驗證(如: 性別以radio button選取且必填、年齡必填)
