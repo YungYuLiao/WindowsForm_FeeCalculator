@@ -18,7 +18,7 @@ namespace Exec_Fee
 			InitializeComponent();
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void Calbtn_Click(object sender, EventArgs e)
 		{
 			//輸入年齡
 			int age;
@@ -83,7 +83,7 @@ namespace Exec_Fee
 			return $"車資: {fee} \r\n原因: {msg}";
 		}
 
-		public bool Gender
+		private bool Gender
 		{
 			get 
 			{ if (rdoMale.Checked) return true;
@@ -108,5 +108,6 @@ namespace Exec_Fee
 			}
 			return age; 
 		}
+
 	}
 }

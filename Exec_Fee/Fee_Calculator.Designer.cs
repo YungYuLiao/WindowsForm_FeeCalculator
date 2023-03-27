@@ -31,7 +31,7 @@
 			this.lblAge = new System.Windows.Forms.Label();
 			this.lblGender = new System.Windows.Forms.Label();
 			this.lblResult = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
+			this.Calbtn = new System.Windows.Forms.Button();
 			this.txtInput = new System.Windows.Forms.TextBox();
 			this.rdoMale = new System.Windows.Forms.RadioButton();
 			this.rdoFemale = new System.Windows.Forms.RadioButton();
@@ -68,15 +68,15 @@
 			this.lblResult.TabIndex = 2;
 			this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// button1
+			// Calbtn
 			// 
-			this.button1.Location = new System.Drawing.Point(45, 66);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 4;
-			this.button1.Text = "計算";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.Calbtn.Location = new System.Drawing.Point(45, 66);
+			this.Calbtn.Name = "Calbtn";
+			this.Calbtn.Size = new System.Drawing.Size(75, 23);
+			this.Calbtn.TabIndex = 4;
+			this.Calbtn.Text = "計算";
+			this.Calbtn.UseVisualStyleBackColor = true;
+			this.Calbtn.Click += new System.EventHandler(this.Calbtn_Click);
 			// 
 			// txtInput
 			// 
@@ -114,7 +114,7 @@
 			this.grpMember.Controls.Add(this.rdoFemale);
 			this.grpMember.Controls.Add(this.lblGender);
 			this.grpMember.Controls.Add(this.rdoMale);
-			this.grpMember.Controls.Add(this.button1);
+			this.grpMember.Controls.Add(this.Calbtn);
 			this.grpMember.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
 			this.grpMember.Location = new System.Drawing.Point(12, 12);
 			this.grpMember.Name = "grpMember";
@@ -158,7 +158,7 @@
 
 		private System.Windows.Forms.Label lblAge;
 		private System.Windows.Forms.Label lblGender;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button Calbtn;
 		private System.Windows.Forms.TextBox txtInput;
 		private System.Windows.Forms.RadioButton rdoMale;
 		private System.Windows.Forms.RadioButton rdoFemale;
