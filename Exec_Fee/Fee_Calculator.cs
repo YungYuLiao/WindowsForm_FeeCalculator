@@ -52,13 +52,18 @@ namespace Exec_Fee
 		{
 			int fee;
 			string msg = string.Empty;
+
+			//設定年齡上下限
 			const int child = 3;
 			const int oldMan = 70;
 			const int oldWoman = 60;
+
+			//設定車資
 			const int childFee = 0;
 			const int oldManFee = 2;
 			const int oldWomanFee = 3;
 			const int standardFee = 15;
+
 			if (age <= child )
 			{
 				 fee = childFee;
@@ -77,6 +82,7 @@ namespace Exec_Fee
 			else { fee = standardFee; msg = "年齡不符優惠標準"; }
 			return $"車資: {fee} \r\n原因: {msg}";
 		}
+
 		public bool Gender
 		{
 			get 
@@ -89,6 +95,8 @@ namespace Exec_Fee
 		private int GetAge()
 		{
 			string input = txtInput.Text;
+
+			//判斷是否輸入數字
 			bool isInt = int.TryParse(input, out int age);
 			if (isInt == false)
 			{
